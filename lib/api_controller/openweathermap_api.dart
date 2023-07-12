@@ -16,10 +16,10 @@ class WeatherApiClient {
     var body = jsonDecode(response.body);
     if (response.statusCode == 404) {
       return Weather(
-          cityName: "City not found",
+          cityName: "Not found",
           temp: 0.0,
-          weatherLike: 'Weather not found',
-          weatherDesc: 'Weather not found',
+          weatherLike: 'Not found',
+          weatherDesc: 'Not found',
           weatherIcon: '01d',
           windSpeed: 0.0,
           windDeg: 0,
